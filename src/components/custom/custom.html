@@ -3,6 +3,6 @@
   <h1>{{TextToUse}}</h1>
 </div>
 <div *ngFor="let text of myHome">
-  <button ion-button >{{text.text}}</button>
+  <button ion-button (click)="clickButton(text.text)">{{text.text}}</button>
 </div>
 

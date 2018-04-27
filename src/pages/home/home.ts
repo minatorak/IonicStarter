@@ -20,4 +20,11 @@ export class HomePage {
     ]
   }
 
+  dosomething(ev){
+  console.log(ev)
+  }
+
+  ClickButtonCustom(st:string){
+    console.log(st)
+  }
 }

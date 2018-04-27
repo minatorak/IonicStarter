@@ -18,5 +18,10 @@
   </ion-list>
 
   <button ion-button secondary menuToggle>Toggle Menu</button>
-  <custom myText="Sawadee" [myHome]="myHome"></custom>
+  <custom myText="Sawadee" [myHome]="myHome"
+
+          (EvenSomeThing)="dosomething($event)"
+          (EvenClickButton)="ClickButtonCustom($event)">
+
+  </custom>
 </ion-content>
