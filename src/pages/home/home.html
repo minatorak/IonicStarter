@@ -15,11 +15,30 @@
       <img [src]="em.icon">
       <h2>{{em.icon}}</h2>
     </ion-item>
-  </ion-list>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
-  <custom myText="Sawadee" [myHome]="myHome"
-          (EvenSomeThing)="doSomeThing($event)"
-          (EvenClickButton)="clickButtonCustom($event)">
-  </custom>
+    <ion-item>
+      <button ion-button secondary menuToggle>Toggle Menu</button>
+    </ion-item>
+    <ion-item>
+      <custom myText="{{Sawadee}}" [myHome]="myHome"
+              (EvenSomeThing)="doSomeThing($event)"
+              (EvenClickButton)="clickButtonCustom($event)"
+              [Number1]="number1" [Number2]="number2"
+              (calculate)="result($event)">
+      </custom>
+    </ion-item>
+    <ion-item>
+      <input type="number" min="0" name="number1" [(ngModel)]="number1">
+      <span> + </span>
+      <input type="number" min="0" name="number2" [(ngModel)]="number2">
+      <p>
+      <h1>
+        {{'Result' + resultValue }}
+      </h1>
+    </ion-item>
+  </ion-list>
 </ion-content>
+
+
+
+

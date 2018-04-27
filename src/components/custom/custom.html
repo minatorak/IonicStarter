@@ -1,7 +1,11 @@
 <!-- Generated template for the CustomComponent component -->
 <div>
-  <h1>{{TextToUse}}</h1>
+  <h1>{{text}}</h1>
 </div>
 <div *ngFor="let text of myHome">
   <button ion-button (click)="clickButton(text.text)">{{text.text}}</button>
+</div>
+<div>
+  <span>{{ Number1 +' + '+ Number2}}</span>
+  <button ion-button type="button" (click)="onCalculate()">calculate</button>
 </div>

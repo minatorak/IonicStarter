@@ -6,8 +6,12 @@ import {NavController} from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
+  number1 : number = 1;
+  number2 : number = 2;
+  resultValue : number = 0;
+  Sawadee:string = 'Sawadee';
 
-  myHome: any = [
+  myHome = [
     {text: "Text1"},
     {text: "Text2"},
     {text: "Text3"},
@@ -27,5 +31,8 @@ export class HomePage {
 
   clickButtonCustom(st: string) {
     console.log(st)
+  }
+  result(value:number){
+    this.resultValue = value;
   }
 }
