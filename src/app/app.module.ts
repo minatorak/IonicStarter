@@ -9,13 +9,15 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {ButtonListPage} from "../pages/button-list/button-list";
+import {ActionSheetComponent} from "../components/action-sheet/action-sheet";
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ListPage,
-    ButtonListPage
+    ButtonListPage,
+    ActionSheetComponent
   ],
   imports: [
     BrowserModule,

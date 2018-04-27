@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {AlertController, IonicPage, NavController, NavParams} from 'ionic-angular';
 
 /**
  * Generated class for the ButtonListPage page.
@@ -15,7 +15,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ButtonListPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public alerCtrl: AlertController) {
   }
 
+  doAlert() {
+    let alert = this.alerCtrl.create({
+      title: 'New Friend!',
+      message: 'Your friend, Obi wan Kenobi, just approved your friend request!',
+      buttons: ['Ok']
+    });
+    alert.present()
+  }
 }
