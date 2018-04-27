@@ -20,16 +20,12 @@ export class CustomComponent {
 
   ngAfterViewInit() {
     this.text = this.TextToUse;
-
     this.evenSomeThing.emit("asfqw");
     console.log("ngAfterViewInit")
   }
 
   clickButton(st: string) {
     this.evenClickButton.emit(st)
-
     console.log("clickButton")
   }
-
-
 }

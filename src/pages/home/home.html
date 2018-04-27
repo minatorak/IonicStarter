@@ -13,15 +13,13 @@
   <ion-list>
     <ion-item *ngFor="let em of employee">
       <img [src]="em.icon">
-        <h2>{{em.icon}}</h2>
+      <h2>{{em.icon}}</h2>
     </ion-item>
   </ion-list>
 
   <button ion-button secondary menuToggle>Toggle Menu</button>
   <custom myText="Sawadee" [myHome]="myHome"
-
-          (EvenSomeThing)="dosomething($event)"
-          (EvenClickButton)="ClickButtonCustom($event)">
-
+          (EvenSomeThing)="doSomeThing($event)"
+          (EvenClickButton)="clickButtonCustom($event)">
   </custom>
 </ion-content>

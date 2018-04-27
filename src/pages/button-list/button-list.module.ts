@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core';
-import { IonicPageModule } from 'ionic-angular';
-import { ButtonListPage } from './button-list';
+import {NgModule} from '@angular/core';
+import {IonicPageModule} from 'ionic-angular';
+import {ButtonListPage} from './button-list';
 
 @NgModule({
   declarations: [
@@ -10,4 +10,5 @@ import { ButtonListPage } from './button-list';
     IonicPageModule.forChild(ButtonListPage),
   ],
 })
-export class ButtonListPageModule {}
+export class ButtonListPageModule {
+}
