@@ -10,6 +10,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {ButtonListPage} from "../pages/button-list/button-list";
 import {ActionSheetComponent} from "../components/action-sheet/action-sheet";
+import { CustomComponent } from "../components/custom/custom";
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {ActionSheetComponent} from "../components/action-sheet/action-sheet";
     HomePage,
     ListPage,
     ButtonListPage,
-    ActionSheetComponent
+    ActionSheetComponent,
+    CustomComponent
   ],
   imports: [
     BrowserModule,

@@ -7,6 +7,11 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
+  myHome:any = [
+    {text:"Text1"},
+    {text:"Text2"},
+    {text:"Text3"},
+  ];
   employee: any;
   constructor(public navCtrl: NavController) {
     this.employee = [
