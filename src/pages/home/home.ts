@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {NavController} from 'ionic-angular';
+import {ModalController, NavController} from 'ionic-angular';
 import {SecondPage} from "../second/second";
 
 @Component({
@@ -19,7 +19,7 @@ export class HomePage {
   ];
   employee: any;
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController,public modalController:ModalController) {
     this.employee = [
       {icon: "add", name: "add"},
       {icon: "apps", name: "apps"}
@@ -39,13 +39,7 @@ export class HomePage {
   }
 
   launchSeconPage() {
-    let data = {
-      title: "Hello SecondPage",
-      arr: [
-        "Flower",
-        "water"
-      ]
-    };
-    this.navCtrl.push(SecondPage,data);
+    let modal = this.modalController.create(SecondPage);
+    modal.present();
   }
 }
