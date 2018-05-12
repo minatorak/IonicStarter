@@ -20,7 +20,8 @@ import {SecondPage} from "../pages/second/second";
     ListPage,
     ButtonListPage,
     ActionSheetComponent,
-    CustomComponent
+    CustomComponent,
+    SecondPage
   ],
   imports: [
     BrowserModule,
