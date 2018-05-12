@@ -19,7 +19,7 @@ export class SecondPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SecondPage');
+    console.log(this.navParams.get('title'))
   }
 
 }

@@ -1,15 +1,16 @@
 import {Component} from '@angular/core';
 import {NavController} from 'ionic-angular';
+import {SecondPage} from "../second/second";
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
-  number1 : number = 1;
-  number2 : number = 2;
-  resultValue : number = 0;
-  Sawadee:string = 'Sawadee';
+  number1: number = 1;
+  number2: number = 2;
+  resultValue: number = 0;
+  Sawadee: string = 'Sawadee';
 
   myHome = [
     {text: "Text1"},
@@ -32,7 +33,19 @@ export class HomePage {
   clickButtonCustom(st: string) {
     console.log(st)
   }
-  result(value:number){
+
+  result(value: number) {
     this.resultValue = value;
+  }
+
+  launchSeconPage() {
+    let data = {
+      title: "Hello SecondPage",
+      arr: [
+        "Flower",
+        "water"
+      ]
+    };
+    this.navCtrl.push(SecondPage,data);
   }
 }
