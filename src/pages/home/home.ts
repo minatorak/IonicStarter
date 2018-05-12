@@ -38,7 +38,7 @@ export class HomePage {
     this.resultValue = value;
   }
 
-  launchSeconPage() {
+  launchSecondPage() {
     let modal = this.modalController.create(SecondPage);
     modal.present();
   }

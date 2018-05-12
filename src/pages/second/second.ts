@@ -19,7 +19,6 @@ export class SecondPage {
   }
 
   ionViewDidLoad() {
-    console.log(this.navParams.get('title'))
   }
 
   closeModal() {
