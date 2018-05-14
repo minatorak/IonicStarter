@@ -22,7 +22,8 @@ export class SecondPage {
   }
 
   closeModal() {
-    this.viewController.dismiss();
+    let data = 'dismiss modal';
+    this.viewController.dismiss(data);
   }
 
 }

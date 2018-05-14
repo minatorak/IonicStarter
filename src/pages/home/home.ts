@@ -40,6 +40,9 @@ export class HomePage {
 
   launchSecondPage() {
     let modal = this.modalController.create(SecondPage);
+    modal.onDidDismiss(data => {
+      console.log(data);
+    });
     modal.present();
   }
 }
